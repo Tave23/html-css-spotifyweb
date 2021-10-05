@@ -8,6 +8,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-10/css/all.min.css" integrity="sha512-Pv1WJMqAtVgNNct5vhq+4cgkKinKpV1jCwSWD4am9CjwxsJSCkLWKcE/ZBqHnEE1mHs01c8B0GMvcn/pQ/yrog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>Spotify Web</title>
 </head>
 <body>
@@ -42,14 +43,19 @@
          <div class="left-footer">
             <div class="current-song">
                <img src="img/sinister.jpeg" alt="Copertina sinister">
-               <div class="current-song-info">
+               <div class="current-song-info clearfix">
                   <div class="current-song-title">
                      <p><strong>Sinister</strong></p>
                   </div>
                   <div class="current-song-album">
                      <p>Nome album</p>
                   </div>
-               </div>
+                  
+               </div> 
+               <span id="like-save">
+                  <i class="far fa-heart"></i>
+                  <i class="far fa-folder"></i>
+               </span>           
             </div>
          </div>
 

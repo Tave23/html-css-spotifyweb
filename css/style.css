@@ -44,7 +44,6 @@ footer{
    width: 100vw;
    background-color: #282828;
    display: flex;
-   display: flex;
    justify-content: space-between;
    align-items: center;
    color: white;
@@ -58,25 +57,47 @@ footer{
 
 .current-song{
    width: 100%;
-   padding: 15px 10px;
+   padding:15px 10px;
    margin: auto 0;
    display: flex;
 }
 
 .current-song img{
-   width: 22%;
+   width: 70px;
+   height: 70px;
+   cursor: pointer;
 }
 
 .current-song-info{
-   padding: 15px 10px;
-   font-size: 14px;
+   padding: 20px 10px;
+   font-size: 12px;
 }
 
 .current-song-album{
    color: #5B5D63;
+   cursor: pointer;
+}
+
+.current-song-title{
+   cursor: pointer;
 }
 
 .mid-footer{
    width: 50%;
    height: 100%;
+}
+
+#like-save{
+   color: #5B5D63;
+   float: right;
+   padding: 25px;
+}
+
+#like-save i{
+   cursor: pointer;
+   padding-left: 10px;
+}
+
+#like-save i:hover{
+   color: white;
 }
