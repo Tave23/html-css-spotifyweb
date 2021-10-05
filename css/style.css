@@ -51,10 +51,11 @@ footer{
 
 .left-footer,
 .right-footer{
-   width: 25%;
+   min-width: 25%;
    height: 100%;
 }
 
+/* left footer */
 .current-song{
    width: 100%;
    padding:15px 10px;
@@ -83,7 +84,7 @@ footer{
 }
 
 .mid-footer{
-   width: 50%;
+   min-width: 50%;
    height: 100%;
 }
 
@@ -100,4 +101,36 @@ footer{
 
 #like-save i:hover{
    color: white;
+}
+
+/* mid footer */
+
+.control-music,
+.time-music{
+   height: 50%;
+}
+
+/* higher mid footer */
+.control-music{
+   color: white;
+   font-size: 25px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 10px;
+}
+
+.control-music i{
+   cursor: pointer;
+   padding: 0 5px;
+}
+
+.control-music i:hover{
+   color: yellowgreen;
+}
+
+/* lower mid footer */
+
+.time-music{
+   display: flex;
+   align-content: space-between
 }
