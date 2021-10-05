@@ -43,4 +43,40 @@ footer{
    height: 100px;
    width: 100vw;
    background-color: #282828;
+   display: flex;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+}
+
+.left-footer,
+.right-footer{
+   width: 25%;
+   height: 100%;
+}
+
+.current-song{
+   width: 100%;
+   padding: 15px 10px;
+   margin: auto 0;
+   display: flex;
+}
+
+.current-song img{
+   width: 22%;
+}
+
+.current-song-info{
+   padding: 15px 10px;
+   font-size: 14px;
+}
+
+.current-song-album{
+   color: #5B5D63;
+}
+
+.mid-footer{
+   width: 50%;
+   height: 100%;
 }
