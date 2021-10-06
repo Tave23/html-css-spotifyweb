@@ -51,7 +51,7 @@ header{
    border-radius: 40px;
 }
 
-/* menu a sx - nav */
+/* menu a sx - NAV */
 
 nav{
    height: calc(100% - 100px);
@@ -138,6 +138,8 @@ nav ul li img{
    padding-bottom: 15px;
 }
 
+/* lower nav */
+
 .nav-footer{
    height: 60px;
    width: 100%;
@@ -176,14 +178,38 @@ nav ul li img{
    margin-left: 30px;
 }
 
+
 /* main centrale */
 
 main{
    height: calc(100% - 100px);
    background-color: #141922;
    overflow: auto;
+   padding-top: 70px;
 }
 
+.main-menu ul li a{
+   text-transform: uppercase;
+   text-decoration: none;
+   color: slategray;
+   font-size: 13px;
+}
+
+.main-menu ul li a:hover{
+   color: white;
+   border-bottom: 1px solid greenyellow;
+}
+
+.main-menu{
+   width: 60%;
+   margin: 0 auto;
+}
+
+.main-menu ul{
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+}
 
 
 /* footer bloccato in fondo */
