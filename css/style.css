@@ -23,9 +23,35 @@ header{
    min-width: calc(100vw - 230px);
    background-color: rgba(0, 0, 0, 0.5);
    position: fixed;
+   align-items: center;
+   display: flex;
+   justify-content: end;
    top: 0;
    right: 0;
+   padding-right: 10px;
 }
+
+.button.upgrade{
+   float: right;
+   border: 1px solid white;
+   border-radius: 20px;
+   font-size: 13px;
+   padding: 10px 15px;
+   text-transform: uppercase;
+}
+
+.button a{
+   padding: 20px;
+   color: white;
+   text-decoration: none;
+}
+
+.upgrade:hover{
+   padding: 15px 20px;
+   border-radius: 40px;
+}
+
+
 
 /* menu a sx */
 
@@ -125,7 +151,8 @@ footer{
    padding: 0 5px;
 }
 
-.control-music i:hover{
+.control-music i:hover,
+.footer-control i:hover{
    color: yellowgreen;
 }
 
