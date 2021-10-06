@@ -141,21 +141,30 @@ footer{
    line-height: 5px;
 }
 
-.line{
+.current-time,
+.total-time{
+   cursor: pointer;
+}
+
+.line-time{
    padding: 0 30px;
 }
 
-#active{
+#active-time{
    width: 80px;
    height: 5px;
-   background-color: seashell;
+   background-color: white;
    float: left;
+   border-radius: 5px;
+   cursor: pointer;
 }
 
-#remaining{
+#remaining-time{
    width: 400px;
    height: 5px;
    background-color: slategrey;
+   border-radius: 5px;
+   cursor: pointer;
 }
 
 /* #hover-time{
@@ -165,3 +174,37 @@ footer{
    background-color: springgreen;
    float: left;
 } */
+
+/* right footer */
+
+.right-footer{
+   width: 20%;
+}
+
+.footer-control {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 0 10px;
+}
+
+.footer-control i{
+   cursor: pointer;
+}
+
+#active-sound{
+   width: 30px;
+   height: 5px;
+   border-radius: 5px;
+   background-color: white;
+   float: left;
+   cursor: pointer;
+}
+
+#remaining-sound{
+   width: 100px;
+   height: 5px;
+   border-radius: 5px;
+   background-color: slategrey;
+   cursor: pointer;
+}

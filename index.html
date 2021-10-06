@@ -11,7 +11,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-10/css/all.min.css" integrity="sha512-Pv1WJMqAtVgNNct5vhq+4cgkKinKpV1jCwSWD4am9CjwxsJSCkLWKcE/ZBqHnEE1mHs01c8B0GMvcn/pQ/yrog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css" integrity="sha512-UJqci0ZyYcQ0AOJkcIkUCxLS2L6eNcOr7ZiypuInvEhO9uqIDi349MEFrqBzoy1QlfcjfURHl+WTMjEdWcv67A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>Spotify Web</title>
 </head>
 <body>
@@ -51,6 +52,7 @@
             </div>
          </div>
          <!-- fine left footer -->
+         <!-- inizio mid footer -->
          <div class="mid-footer">
             <div class="control-music">
                <i class="fas fa-random"></i>
@@ -63,21 +65,30 @@
                <div class="current-time">
                   0:25
                </div>
-               <div class="line">
-                  <div id="active"></div>
+               <div class="line-time">
+                  <div id="active-time"></div>
                   <!-- <div id="hover-time"></div> -->
-                  <div id="remaining"></div>
+                  <div id="remaining-time"></div>
                </div>
                <div class="total-time">
                   4:35
                </div>
             </div>
          </div>
-
+         <!-- fine mid footer -->
+         <!-- inizio right footer -->
          <div class="right-footer">
-            
+            <div class="footer-control">
+               <i class="fas fa-list"></i>
+               <i class="fas fa-tv"></i>
+               <i class="fas fa-volume-up"></i>
+               <div id="sound-time">
+                  <div id="active-sound"></div>
+                  <div id="remaining-sound"></div>
+               </div>
+            </div>
          </div>
-
+         <!-- fine right footer -->
       </footer>
 
    </div>
