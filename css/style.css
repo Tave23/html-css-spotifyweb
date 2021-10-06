@@ -19,7 +19,7 @@
 /* header upgrade */
 
 header{
-   height: 100px;
+   height: 70px;
    min-width: calc(100vw - 230px);
    background-color: rgba(0, 0, 0, 0.5);
    position: fixed;
@@ -47,7 +47,6 @@ main{
 /* footer bloccato in fondo */
 
 footer{
-   height: 100px;
    width: 100%;
    background-color: #282828;
    display: flex;
@@ -86,8 +85,7 @@ footer{
 }
 
 .mid-footer{
-   min-width: 50%;
-   height: 100%;
+   width: 50%;
 }
 
 #like-save{
@@ -116,9 +114,10 @@ footer{
 .control-music{
    color: white;
    font-size: 25px;
-   margin: 0 auto;
+   align-items: center;
+   justify-content: space-around;
    text-align: center;
-   padding: 15px;
+   padding-bottom: 20px;
 }
 
 .control-music i{
@@ -136,7 +135,6 @@ footer{
    display: flex;
    align-content: space-between;
    justify-content: center;
-   padding-top: 15px;
    font-size: 12px;
    line-height: 5px;
 }
