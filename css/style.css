@@ -51,15 +51,33 @@ header{
    border-radius: 40px;
 }
 
-
-
-/* menu a sx */
+/* menu a sx - nav */
 
 nav{
    min-height: calc(100% - 100px);
    width: 230px;
-   background-color: cadetblue;
+   background-color: black;
    float: left;
+   color: white;
+}
+
+nav a{
+   color: slategrey;
+   text-decoration: none;
+}
+
+.comandi{
+   padding: 0 10px;
+}
+
+#logo{
+   width: 100%;
+   height: 70px;
+   padding: 15px;
+}
+
+#logo img{
+   height: 100%;
 }
 
 /* main centrale */
