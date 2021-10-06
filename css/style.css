@@ -54,7 +54,7 @@ header{
 /* menu a sx - nav */
 
 nav{
-   min-height: calc(100% - 100px);
+   height: calc(100% - 100px);
    width: 230px;
    background-color: black;
    float: left;
@@ -80,6 +80,54 @@ nav a{
    height: 100%;
 }
 
+nav ul li{
+   list-style: none;
+   margin-bottom: 5px;
+}
+
+nav ul li a:hover{
+   color: white;
+}
+
+nav ul li img{
+   width: 25px;
+   padding-right: 5px;
+}
+
+.playlist{
+   padding-top: 20px;
+   overflow: auto;
+}
+
+.add-playlist{
+   width: 40px;
+   height: 40px;
+   background-color: slategray;
+   color: black;
+   display: flex;
+   font-size: 40px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   margin-right: 10px;
+   float: left;
+}
+
+.crea-playlist{
+   float: left;
+   line-height: 60px;
+}
+
+.playlist ul{
+   margin-top: 80px; 
+}
+
+.playlist ul li{
+   padding-bottom: 15px;
+}
+
+
+
 /* main centrale */
 
 main{
@@ -91,6 +139,7 @@ main{
 /* footer bloccato in fondo */
 
 footer{
+   height: 100px;
    width: 100%;
    background-color: #282828;
    display: flex;
