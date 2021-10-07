@@ -262,7 +262,7 @@ main h2{
 
 .bg-button{
    position: relative;
-   transition: hover 2s;
+   transition: all 1s;
 }
 
 .overlay{
