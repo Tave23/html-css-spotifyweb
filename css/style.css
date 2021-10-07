@@ -195,6 +195,10 @@ nav ul li img{
    margin-left: 30px;
 }
 
+.nav-footer a:hover{
+   color: white;
+}
+
 
 /* main centrale */
 
@@ -368,7 +372,6 @@ footer{
 
 #like-save i{
    cursor: pointer;
-   padding-left: 10px;
 }
 
 #like-save i:hover{
@@ -418,25 +421,47 @@ footer{
 }
 
 .line-time{
-   padding: 0 30px;
+   padding: 0 15px;
 }
 
 #active-time{
-   width: 7.5vw;
+   width: 5vw;
    height: 5px;
    background-color: white;
    float: left;
    border-radius: 5px;
    cursor: pointer;
+   position: relative;
+}
+
+#active-time-point{
+   position: absolute;
+   left: 50px;
+   top: -3px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: white;
+   visibility: hidden;
+}
+
+#active-time:hover #active-time-point{
+   visibility: visible;
+}
+
+
+#active-time:hover{
+   background-color: greenyellow;
 }
 
 #remaining-time{
-   width: 30vw;
+   width: 25vw;
    height: 5px;
    background-color: slategrey;
    border-radius: 5px;
    cursor: pointer;
 }
+
 
 /* right footer */
 
@@ -455,6 +480,10 @@ footer{
    cursor: pointer;
 }
 
+#sound-time{
+   position: relative;
+}
+
 #active-sound{
    width: 30px;
    height: 5px;
@@ -462,6 +491,17 @@ footer{
    background-color: white;
    float: left;
    cursor: pointer;
+}
+
+#active-sound-point{
+   position: absolute;
+   left: 25px;
+   top: -3px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: white;
+   visibility: hidden;
 }
 
 #remaining-sound{
@@ -472,9 +512,13 @@ footer{
    cursor: pointer;
 }
 
+#active-sound:hover{
+   background-color: greenyellow;
+}
 
-
-
+#active-sound:hover #active-sound-point{
+   visibility: visible;
+}
 
 /* media query */
 
@@ -492,6 +536,16 @@ footer{
 
    .song{
       width: 25%;
+   }
+
+   .footer-control{
+      display: block;
+      text-align: center;
+   }
+
+   .footer-control i{
+      margin-bottom: 20px;
+      margin-left: 5px;
    }
 }
 
@@ -545,5 +599,24 @@ footer{
 
    /* footer */
 
-   
+   .footer-control{
+      display: block;
+      text-align: center;
+   }
+
+   .footer-control i{
+      margin-bottom: 20px;
+   }
+
+   #like-save{
+      visibility: hidden;
+   }
+
+   .mid-footer{
+      margin-left: 20px;
+   }
+
+   .main-menu{
+      width: 80%;
+   }
 }
