@@ -263,6 +263,7 @@ main h2{
 
 .bg-button{
    position: relative;
+   transition: hover 2s;
 }
 
 .overlay{
@@ -400,6 +401,7 @@ footer{
 .control-music i{
    cursor: pointer;
    padding: 0 5px;
+   transition: all 0.3s;
 }
 
 .control-music i:hover,
@@ -428,7 +430,7 @@ footer{
 }
 
 #active-time{
-   width: 5vw;
+   width: 50px;
    height: 5px;
    background-color: white;
    float: left;
@@ -439,7 +441,7 @@ footer{
 
 #active-time-point{
    position: absolute;
-   left: 50px;
+   left: 48px;
    top: -3px;
    width: 10px;
    height: 10px;
@@ -458,7 +460,7 @@ footer{
 }
 
 #remaining-time{
-   width: 25vw;
+   width: 300px;
    height: 5px;
    background-color: slategrey;
    border-radius: 5px;
@@ -481,6 +483,7 @@ footer{
 
 .footer-control i{
    cursor: pointer;
+   transition: all 0.3s;
 }
 
 #sound-time{
