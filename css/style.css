@@ -20,7 +20,7 @@
 
 header{
    height: 70px;
-   min-width: calc(100vw - 230px);
+   width: calc(100vw - 230px);
    background-color: rgba(0, 0, 0, 0.5);
    position: fixed;
    align-items: center;
@@ -29,6 +29,7 @@ header{
    top: 0;
    right: 0;
    padding-right: 10px;
+   z-index: 999;
 }
 
 .button.upgrade{
@@ -80,6 +81,22 @@ nav a{
 
 #logo img{
    height: 100%;
+}
+
+#logo-mini{
+   width: 100%;
+   height: 70px;
+   padding: 15px;
+   display: none;
+}
+
+#logo-mini img{
+   height: 100%;
+   display: none;
+}
+
+#nav-mini{
+   display: none;
 }
 
 nav ul li{
@@ -264,9 +281,6 @@ main h2{
   visibility: visible;
 }
 
-.song img:hover{
-   background-color: rgba(0, 0, 0, 0.5);
-}
 
 .song img{
    width: 100%;
@@ -295,7 +309,6 @@ main h2{
 /* footer bloccato in fondo */
 
 footer{
-   height: 100px;
    width: 100%;
    background-color: #282828;
    display: flex;
@@ -335,6 +348,16 @@ footer{
 
 .mid-footer{
    width: 50%;
+   margin-bottom: 20px;
+}
+
+.left-footer,
+.right-footer{
+   width: 20%;
+}
+
+.right-footer{
+   margin-bottom: 20px;
 }
 
 #like-save{
@@ -399,7 +422,7 @@ footer{
 }
 
 #active-time{
-   width: 80px;
+   width: 7.5vw;
    height: 5px;
    background-color: white;
    float: left;
@@ -408,20 +431,12 @@ footer{
 }
 
 #remaining-time{
-   width: 400px;
+   width: 30vw;
    height: 5px;
    background-color: slategrey;
    border-radius: 5px;
    cursor: pointer;
 }
-
-/* #hover-time{
-   border-radius: 50%;
-   width: 10px;
-   height: 10px;
-   background-color: springgreen;
-   float: left;
-} */
 
 /* right footer */
 
@@ -455,4 +470,80 @@ footer{
    border-radius: 5px;
    background-color: slategrey;
    cursor: pointer;
+}
+
+
+
+
+
+/* media query */
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+   header{
+   }
+}
+
+
+@media screen and (min-width:576px) and (max-width:768px) {
+   .recently-played .five,
+   .recently-played .six{
+      display: none;
+   }
+
+   .song{
+      width: 25%;
+   }
+}
+
+@media screen and (max-width:576px){
+   .recently-played .three,
+   .recently-played .four,
+   .recently-played .five,
+   .recently-played .six{
+      display: none;
+   }
+
+   header{
+      width: calc (100% - 70px)
+   }
+
+   .song{
+      width: 50%;
+   }
+
+   #logo-mini,
+   #logo-mini img{
+      display: block;
+   }
+
+   #logo{
+      display: none;
+   }
+
+   #nav-mini{
+      display: block;
+   }
+
+   nav ul li img{
+      width: 40px;
+      text-align: center;
+      margin-left: 8px;
+   }
+
+   #nav-normal{
+      display: none;
+   }
+
+   .playlist,
+   .nav-footer{
+      display: none;
+   }
+
+   nav{
+      width: 70px;
+   }
+
+   /* footer */
+
+   
 }
