@@ -430,7 +430,7 @@ footer{
 }
 
 #active-time{
-   width: 50px;
+   width: 5vw;
    height: 5px;
    background-color: white;
    float: left;
@@ -439,28 +439,12 @@ footer{
    position: relative;
 }
 
-#active-time-point{
-   position: absolute;
-   left: 48px;
-   top: -3px;
-   width: 10px;
-   height: 10px;
-   border-radius: 50%;
-   background-color: white;
-   visibility: hidden;
-}
-
-#active-time:hover #active-time-point{
-   visibility: visible;
-}
-
-
 #active-time:hover{
    background-color: greenyellow;
 }
 
 #remaining-time{
-   width: 300px;
+   width: 25vw;
    height: 5px;
    background-color: slategrey;
    border-radius: 5px;
